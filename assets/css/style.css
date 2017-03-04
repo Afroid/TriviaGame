@@ -1,0 +1,52 @@
+body{
+	min-width: 500px;
+}
+
+header{
+	width:100%;
+	text-align:center;
+}
+
+header img{
+	display:inline-block;
+	margin: 0 auto;
+	width: auto;
+	height: auto;
+	max-width: 50%;
+	max-height: 50%;
+}
+
+form{
+	font-size: 18px;
+}
+
+form label{
+	color: green;
+}
+
+form p{
+	color: red;
+}
+
+#timeHolder{
+	text-align: center;
+	font-size: 24px;
+}
+
+#myForm{
+
+}
+
+#myForm div{
+	text-align: center;
+	margin: 2% 0 2% 0;
+}
+
+#results{
+	margin-top: 2%;
+}
+
+#results div{
+	text-align: center;
+	font-size: 24px;
+}

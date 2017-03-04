@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">	
+
+  	<!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+</head>
+<body>
+
+<header id="header" class="row col-md-12">
+	<img src="assets/images/background.png" alt="Trivia" />
+</header>
+
+<div class="container-fluid text-center">
+    <div id="start" class="row col-md-12">
+        <input id="startButton" type="button" value="Start" class="btn btn-info btn-lg" />
+    </div>
+
+	<div id="replay" class="row col-md-12">
+	        <input id="replayButton" type="button" value="Replay" class="btn btn-info btn-lg" />
+	</div>	
+
+	<div id="timeHolder" class="row col-md-12">
+		Time Remaining: <p id="timeRemaining">15</p>
+	</div>
+
+	<form id="myForm" class="row col-md-12">
+		<div class="row col-md-12">
+			<p class="col-md-12">I'm Ron Burgundy?</p>
+			<label class="radio-inline"><input id="firstTrue" type="radio" name="firstGroup" />True</label>
+			<label class="radio-inline"><input id="secondTrue" type="radio" name="firstGroup" />False</label>
+		</div>
+
+		<div class="row col-md-12">
+			<p class="col-md-12">Neo in the Matrix took the red pill.</p>
+			<label class="radio-inline"><input id="thirdTrue" type="radio" name="secondGroup" />True</label>
+			<label class="radio-inline"><input id="fourthTrue" type="radio" name="secondGroup" />False</label>		
+		</div>
+
+		<div class="row col-md-12">
+			<p class="col-md-12">Boxers are the best breed of dog ever.</p>
+			<label class="radio-inline"><input id="fifthTrue" type="radio" name="thirdGroup" />True</label>
+			<label class="radio-inline"><input id="sixthTrue" type="radio" name="thirdGroup" />False</label>
+		</div>
+
+	    <div id="done" class="row col-md-12">
+	        <input id="doneButton" type="button" value="Done" class="btn btn-info btn-lg" />
+	    </div>						
+	</form>
+
+    <div id="results" class="row col-md-12 text-center">
+            <div class="row col-md-12 totalQuestions"></div>
+            <div class="row col-md-12 correct"></div>
+            <div class="row col-md-12 incorrect"></div>
+            <div class="row col-md-12 nothing"></div>
+    </div>	
+
+</div>
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
